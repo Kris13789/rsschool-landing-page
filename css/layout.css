@@ -1,0 +1,22 @@
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: var(--space-lg);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-inline: var(--space-sm);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding-inline: var(--space-xs);
+  }
+}
+
+main {
+  display: block;
+  overflow-x: clip;
+}

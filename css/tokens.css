@@ -1,0 +1,62 @@
+/* Design tokens pulled from Figma "Colors", "Colors [Dark]", "Typography", "Links & Buttons" pages */
+
+:root,
+[data-theme="light"] {
+  --color-bg-page: #e1d4c9;
+  --color-bg-surface: #665f55;
+  --color-bg-overlay: rgba(64, 63, 61, 0.8);
+  --color-text-primary: #403f3d;
+  --color-text-inverse: #e1d4c9;
+  --color-text-accent: #b0907a;
+  --color-border-primary: #c1b6ad;
+  --color-border-inverse: #665f55;
+}
+
+[data-theme="dark"] {
+  --color-bg-page: #292826;
+  --color-bg-surface: #403f3d;
+  --color-bg-overlay: rgba(41, 40, 38, 0.8);
+  --color-text-primary: #e1d4c9;
+  --color-text-inverse: #e1d4c9;
+  --color-text-accent: #b0907a;
+  --color-border-primary: #665f55;
+  --color-border-inverse: #c1b6ad;
+}
+
+:root {
+  /* theme-invariant */
+  --color-focus-ring: #b0907a;
+
+  /* type */
+  --font-family: "Inter", sans-serif;
+  --fs-h1: 72px;
+  --lh-h1: 1.05;
+  --fs-h2: 60px;
+  --lh-h2: 1.25;
+  --fs-h3: 24px;
+  --lh-h3: 1.25;
+  --fs-body: 16px;
+  --lh-body: 1.5;
+  --fs-caption: 10px;
+  --lh-caption: 1.4;
+  --fs-action: 16px;
+  --lh-action: 1.5;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+
+  /* spacing */
+  --space-2xs: 8px;
+  --space-xs: 20px;
+  --space-sm: 40px;
+  --space-md: 60px;
+  --space-lg: 100px;
+
+  /* radius */
+  --radius-card: 40px;
+  --radius-photo: 20px;
+  --radius-pill: 999px;
+
+  /* motion */
+  --transition-fast: 150ms ease;
+  --transition-theme: 200ms ease-out;
+}

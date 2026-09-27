@@ -1,0 +1,117 @@
+.site-footer {
+  padding-inline: var(--space-sm);
+  padding-block: var(--space-sm);
+}
+
+.footer-card {
+  max-width: 1360px;
+  margin-inline: auto;
+  background-color: var(--color-bg-surface);
+  border-radius: var(--radius-card);
+  padding: var(--space-lg);
+  display: flex;
+  gap: var(--space-lg);
+  color: var(--color-text-inverse);
+  transition: background-color var(--transition-theme);
+}
+
+.footer-offer,
+.footer-contacts {
+  flex: 1 0 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.footer-heading {
+  font-size: var(--fs-h2);
+  line-height: var(--lh-h2);
+  color: var(--color-text-inverse);
+}
+
+.footer-socials {
+  display: flex;
+  gap: var(--space-2xs);
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border-primary);
+  transition: background-color var(--transition-fast), border-color var(--transition-fast);
+}
+
+.social-icon:hover,
+.social-icon:focus-visible {
+  background-color: rgba(225, 212, 201, 0.15);
+  border-color: var(--color-text-inverse);
+}
+
+.social-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-subheading {
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  font-size: var(--fs-action);
+  line-height: var(--lh-action);
+  font-weight: var(--fw-semibold);
+  padding-bottom: var(--space-2xs);
+  border-bottom: 1px solid transparent;
+  transition: border-color var(--transition-fast);
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+  border-bottom-color: currentColor;
+}
+
+.contact-link img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .site-footer {
+    padding-inline: var(--space-xs);
+  }
+
+  .footer-card {
+    padding: var(--space-sm);
+    gap: var(--space-sm);
+  }
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    padding-inline: var(--space-2xs);
+  }
+
+  .footer-card {
+    flex-direction: column;
+    padding: var(--space-xs);
+  }
+
+  .footer-heading {
+    font-size: clamp(32px, 8vw, var(--fs-h2));
+  }
+}
