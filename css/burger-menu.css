@@ -26,10 +26,12 @@
 
   .site-header.is-menu-open .header-row {
     flex: 0 0 auto;
+    margin-inline: 0;
   }
 
   .nav-drawer {
     display: block;
+    height: 0;
     flex: 1 1 auto;
     min-height: 0;
     overflow-y: auto;
