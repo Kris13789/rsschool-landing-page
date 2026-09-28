@@ -170,13 +170,18 @@
   overflow: hidden;
 }
 
+.slider__track {
+  display: flex;
+  transition: transform 400ms ease;
+}
+
 .slider__slide {
   display: flex;
+  flex: 0 0 100%;
+  min-width: 0;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
   gap: var(--space-xs);
-  max-width: 480px;
-  margin-inline: auto;
   text-align: center;
 }
 
@@ -193,6 +198,7 @@
 }
 
 .slider__description {
+  max-width: 480px;
   font-size: var(--fs-body);
   line-height: var(--lh-body);
 }
