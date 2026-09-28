@@ -103,6 +103,11 @@
   height: 18px;
 }
 
+.theme-toggle__icon--sun svg {
+  width: 22px;
+  height: 22px;
+}
+
 .theme-toggle__icon--sun {
   background-color: var(--color-text-accent);
   color: var(--color-text-inverse);
@@ -136,6 +141,10 @@
 
 @media (max-width: 768px) {
   .primary-nav {
+    display: none;
+  }
+
+  .header-menu-link {
     display: none;
   }
 

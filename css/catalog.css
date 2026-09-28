@@ -86,6 +86,7 @@
   border: 1px solid var(--color-border-primary);
   border-radius: var(--radius-card);
   overflow: hidden;
+  cursor: pointer;
   transition: border-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
 }
 
@@ -136,7 +137,7 @@
   height: 60px;
   margin-inline: auto;
   border-radius: 50%;
-  border: 1px solid var(--color-border-inverse);
+  border: 1px solid var(--color-border-primary);
   color: var(--color-text-primary);
   transition: background-color var(--transition-fast), color var(--transition-fast);
 }
@@ -176,7 +177,7 @@
 
 @media (max-width: 600px) {
   .catalog-menu {
-    padding-inline: var(--space-2xs);
+    padding-inline: 16px;
   }
 
   .category-grid {

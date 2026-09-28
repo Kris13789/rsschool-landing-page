@@ -12,7 +12,7 @@
 
 @media (max-width: 600px) {
   .container {
-    padding-inline: var(--space-xs);
+    padding-inline: 16px;
   }
 }
 
