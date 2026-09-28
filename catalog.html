@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="css/burger-menu.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/catalog.css">
+  <link rel="stylesheet" href="css/modal.css">
 </head>
 <body>
   <!-- SHARED HEADER — keep in sync with index.html -->
@@ -209,9 +210,41 @@
   </footer>
   <!-- /SHARED FOOTER -->
 
+  <div class="modal-overlay" id="product-modal-overlay" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <img src="" alt="" class="modal__image" id="modal-image">
+      <div class="modal__content">
+        <div class="modal__intro">
+          <h3 class="modal__title" id="modal-title"></h3>
+          <p class="modal__description" id="modal-description"></p>
+        </div>
+
+        <fieldset class="modal__field">
+          <legend class="modal__label">Size</legend>
+          <div class="modal__options" id="modal-size-options" role="radiogroup" aria-label="Size"></div>
+        </fieldset>
+
+        <fieldset class="modal__field">
+          <legend class="modal__label">Additives</legend>
+          <div class="modal__options" id="modal-additive-options"></div>
+        </fieldset>
+
+        <p class="modal__total">Total: <span id="modal-total-price"></span></p>
+
+        <p class="modal__disclaimer">
+          <img src="assets/icons/info.svg" alt="" class="modal__info-icon">
+          The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount.
+        </p>
+
+        <button type="button" class="modal__submit" id="modal-close-button">Close</button>
+      </div>
+    </div>
+  </div>
+
   <script src="js/theme-toggle.js" defer></script>
   <script src="js/utils.js" defer></script>
   <script src="js/burger-menu.js" defer></script>
   <script src="js/catalog.js" defer></script>
+  <script src="js/modal.js" defer></script>
 </body>
 </html>
