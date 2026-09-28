@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/burger-menu.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/catalog.css">
 </head>
@@ -87,13 +88,30 @@
           </svg>
         </a>
 
-        <button type="button" class="burger-button" aria-label="Open menu">
-          <svg viewBox="0 0 16 8" fill="none" aria-hidden="true">
-            <path d="M0 1H16" stroke="currentColor" stroke-width="1.5"/>
-            <path d="M0 7H16" stroke="currentColor" stroke-width="1.5"/>
+        <button type="button" class="burger-button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path class="burger-button__bar burger-button__bar--top" d="M0 4H16" stroke="currentColor" stroke-width="1.5"/>
+            <path class="burger-button__bar burger-button__bar--bottom" d="M0 12H16" stroke="currentColor" stroke-width="1.5"/>
           </svg>
         </button>
       </div>
+    </div>
+
+    <div class="nav-drawer" id="nav-drawer">
+      <nav class="nav-drawer__nav" aria-label="Mobile">
+        <ul class="nav-drawer__list">
+          <li><a href="index.html#favorite-coffee" class="nav-drawer__link">Favorite coffee</a></li>
+          <li><a href="index.html#about" class="nav-drawer__link">About</a></li>
+          <li><a href="index.html#mobile-app" class="nav-drawer__link">Mobile app</a></li>
+          <li><a href="index.html#contact" class="nav-drawer__link">Contact us</a></li>
+          <li>
+            <a href="catalog.html" class="nav-drawer__link nav-drawer__link--menu">
+              Menu
+              <img src="assets/icons/cup.svg" alt="" class="nav-drawer__icon">
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
   <!-- /SHARED HEADER -->
@@ -390,5 +408,7 @@
   <!-- /SHARED FOOTER -->
 
   <script src="js/theme-toggle.js" defer></script>
+  <script src="js/utils.js" defer></script>
+  <script src="js/burger-menu.js" defer></script>
 </body>
 </html>

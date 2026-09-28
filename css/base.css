@@ -98,6 +98,10 @@ ul {
   color: var(--color-text-accent);
 }
 
+.scroll-locked {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
